@@ -3,6 +3,7 @@ package com.julysky.client;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.julysky.pojo.Pair;
 import com.julysky.registry.ServiceDiscovery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +17,6 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import javafx.util.Pair;
 
 /**
  * Created by haoyifen on 2017/6/19 12:58.

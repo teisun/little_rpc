@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
+import com.julysky.pojo.Pair;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.cache.ChildData;
@@ -16,7 +17,6 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.ImmutableList;
 
-import javafx.util.Pair;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -33,6 +33,14 @@ public class ServiceDiscovery {
 	private String zkAddress;
 	private CuratorFramework client;
 	private ConcurrentHashMap<String, PathChildrenCache> servicesMap = new ConcurrentHashMap<>();
+
+	public String getZkAddress() {
+		return zkAddress;
+	}
+
+	public void setZkAddress(String zkAddress) {
+		this.zkAddress = zkAddress;
+	}
 
 	public static void main(String[] args) throws Exception {
 

@@ -24,6 +24,22 @@ public class ServiceRegistry {
 	private String serviceName;
 	private CuratorFramework client;
 
+	public String getZkAddress() {
+		return zkAddress;
+	}
+
+	public void setZkAddress(String zkAddress) {
+		this.zkAddress = zkAddress;
+	}
+
+	public String getServiceName() {
+		return serviceName;
+	}
+
+	public void setServiceName(String serviceName) {
+		this.serviceName = serviceName;
+	}
+
 	public static void main(String[] args) throws Exception {
 		TestingServer testingServer = new TestingServer(2181);
 		testingServer.start();

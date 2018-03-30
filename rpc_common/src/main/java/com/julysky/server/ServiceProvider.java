@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
+import com.julysky.pojo.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
@@ -21,7 +22,6 @@ import com.julysky.autoConfiguration.RPCService;
 import com.julysky.pojo.RpcCall;
 
 import co.paralleluniverse.fibers.Suspendable;
-import javafx.util.Pair;
 
 /**
  * Created by haoyifen on 2017/6/1 9:00.
