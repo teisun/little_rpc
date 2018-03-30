@@ -35,6 +35,16 @@ public class LittleRpcClientApplication {
 				Instant startNew = Instant.now();
 				logger.info("start new");
 				int total = 10000;
+//				for (int j = 0; j < total; j++) {
+//					int finalI = j;
+//					List<User> users = userService.findByAge(24);
+//					if (finalI % (total-1) == 0) {
+//						logger.debug(finalI + " : " + users.toString());
+//						System.out.println(finalI + " : " + users.toString());
+//					}
+//				}
+
+
 				Fiber[] fibers = new Fiber[total];
 				for (int j = 0; j < total; j++) {
 					int finalI = j;
